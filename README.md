@@ -3,12 +3,23 @@
 
 Este repositorio contiene una aplicación PHP CRUD (Create, Read, Update, Delete) simple. Es una demostración básica de cómo integrar PHP con una base de datos MySQL para gestionar datos de usuarios. La aplicación permite a los usuarios agregar, ver, editar y eliminar información de usuario.
 
+-Las operaciones CRUD son la columna vertebral de cualquier aplicación basada en bases de datos. Te permiten realizar las operaciones de base de datos más básicas y esenciales, como crear nuevos registros, leer los existentes, actualizarlos y eliminarlos.
+
 ## Tecnologías Utilizadas
 
 - **PHP:** Lenguaje de script del lado del servidor utilizado para el desarrollo web.
 - **MySQL:** Sistema de gestión de base de datos utilizado para almacenar datos de usuario.
 - **HTML & CSS:** Utilizados para estructurar y dar estilo a las páginas web.
 - **Tailwind CSS:** Un framework de CSS utilitario para el desarrollo rápido de interfaces de usuario.
+- JavaScript (JS): Es fundamental para la interactividad en el lado del cliente y se puede usar junto con PHP para realizar solicitudes asíncronas (AJAX) para actualizar partes específicas de una página sin necesidad de recargarla por completo.
+
+-jQuery: Una biblioteca de JavaScript que simplifica la manipulación del DOM y la realización de solicitudes AJAX. Puede facilitar la implementación de interactividad en la interfaz de usuario.
+
+-AJAX (Asynchronous JavaScript and XML): Una técnica de desarrollo web que permite actualizar partes específicas de una página sin necesidad de recargarla por completo. Se puede utilizar para enviar y recibir datos del servidor sin interrumpir la experiencia del usuario.
+
+-JSON (JavaScript Object Notation): Un formato de intercambio de datos ligero que es fácil de leer y escribir para humanos y fácil de analizar y generar para las máquinas. Se utiliza comúnmente para transmitir datos entre el cliente y el servidor en aplicaciones web.
+
+-RESTful APIs: Si estás construyendo una aplicación más compleja o escalable, puedes optar por crear una API RESTful en PHP para manejar las operaciones CRUD de manera más estructurada y escalable. Esto permite una separación más clara entre el frontend y el backend, facilitando el desarrollo y la escalabilidad de la aplicación.
 
 ## Páginas y Funcionalidades
 
@@ -44,6 +55,18 @@ Este repositorio contiene una aplicación PHP CRUD (Create, Read, Update, Delete
 - **Funcionalidad:** Facilita la eliminación de un usuario de la base de datos.
 - **Características:** 
   - Eliminación de información de usuario basada en el ID de usuario.
+  - 
+### 5. Página de Lista de Elementos:
+
+-Muestra una lista de los elementos existentes en la base de datos.
+-Proporciona opciones para filtrar, ordenar y buscar elementos.
+-Permite al usuario seleccionar un elemento para ver detalles, editar o eliminar. 
+
+### 6.Página de Creación de Elementos:
+
+Presenta un formulario para que el usuario ingrese datos para un nuevo elemento.
+Valida los datos ingresados para garantizar que cumplan con los requisitos.
+Permite al usuario enviar el formulario para crear un nuevo elemento en la base de datos.
 
 ## Conexión a la Base de Datos (`connect.php`)
 
@@ -57,6 +80,13 @@ Este repositorio contiene una aplicación PHP CRUD (Create, Read, Update, Delete
 3. Crea la base de datos usando phpmyadmin.
 4. Ejecuta la aplicación en un servidor local.
 
+
+## Operaciones del CRUD:
+
+Crear (Create): Permite agregar nuevos registros a la base de datos.
+Leer (Read): Recupera y muestra registros existentes de la base de datos.
+Actualizar (Update): Modifica registros existentes en la base de datos.
+Borrar (Delete): Elimina registros de la base de datos.
 ## Nota de Seguridad
 
 Esta aplicación es una demostración básica y no implementa medidas avanzadas de seguridad. Es recomendable utilizar declaraciones preparadas (prepared statements) u ORM para las interacciones con la base de datos para prevenir ataques de inyección SQL.
